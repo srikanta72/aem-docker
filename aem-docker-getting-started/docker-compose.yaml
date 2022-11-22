@@ -1,0 +1,40 @@
+version: '3'
+services:
+  author:
+    container_name: aem_author
+    build:
+      context: ./
+      dockerfile: author/Dockerfile
+    hostname: 'author'
+    ports:
+      - '4502:4502'
+      - '30303:30303'
+    volumes:
+      - ./logs/author:/opt/aem/crx-quickstart/logs
+    depends_on:
+      - 'publisher'
+  publisher:
+    container_name: aem_publisher
+    build:
+      context: ./
+      dockerfile: publisher/Dockerfile
+    hostname: 'publisher'
+    ports:
+      - '4503:4503'
+      - '30304:30304'
+    volumes:
+      - ./logs/publisher:/opt/aem/crx-quickstart/logs
+  dispatcher:
+    container_name: aem_dispatcher
+    build:
+      context: ./dispatcher
+    hostname: 'dispatcher'
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes:
+      - ./logs/dispatcher:/etc/httpd/logs
+    environment:
+      - DOMAIN=aem.local
+    depends_on:
+      - 'publisher'
