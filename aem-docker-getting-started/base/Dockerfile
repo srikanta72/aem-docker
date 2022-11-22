@@ -7,11 +7,11 @@ RUN yum -y update
 RUN yum -y install java-11-openjdk
 
 # Copy required build media
-ADD aem_instance/AEM_Quickstart.jar /opt/aem/AEM_Quickstart.jar
+ADD aem_instance/aem-quickstart.jar /opt/aem/aem-quickstart.jar
 ADD aem_instance/license.properties /opt/aem/license.properties
 
 # Extract AEM
 WORKDIR /opt/aem
-RUN java -Djava.awt.headless=true -Xms1024m -Xmx4096m -jar AEM_Quickstart.jar -unpack
+RUN java -Djava.awt.headless=true -Xms1024m -Xmx4096m -jar aem-quickstart.jar -unpack
 
 COPY ./base/packages/aem-service-pkg-6.5.13-SITES-3574-B0001.zip /opt/aem/crx-quickstart/install/aem-service-pkg-6.5.13-SITES-3574-B0001.zip
