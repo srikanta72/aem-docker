@@ -15,7 +15,7 @@ This tutorial assumes running on a Mac. Installation on Windows might differ for
 
 1. Clone this repository to a local directory and put the AEM installation file, license file in the root.
 2. Put AEM quickstart jar file in `./aem_instance/` 
-3. Put AEM packages that need to be installed during build in `./base/packages/`. Order of installation will be alphabetically, based on package file name.
+3. Put AEM packages that need to be installed during build in `./aem_packages/`. Order of installation will be alphabetically, based on package file name.
 4. run `aem-docker-start.sh` 
 or 
 5. 

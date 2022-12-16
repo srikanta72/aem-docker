@@ -14,4 +14,4 @@ ADD aem_instance/license.properties /opt/aem/license.properties
 WORKDIR /opt/aem
 RUN java -Djava.awt.headless=true -Xms1024m -Xmx4096m -jar aem-quickstart.jar -unpack
 
-COPY ./base/packages/*.zip /opt/aem/crx-quickstart/install/
+COPY aem_packages/*.zip /opt/aem/crx-quickstart/install/
