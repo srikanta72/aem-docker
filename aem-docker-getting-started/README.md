@@ -40,9 +40,9 @@ Publisher: [http://localhost:4503](http://localhost:4503)
   |- aem_instance
   |  |- aem-quickstart.jar
   |  |- license.properties
+  |- packages
+  |  |- aem-service-pkg-6.5.2.zip
   |- base
-  |  |- packages
-  |       |- aem-service-pkg-6.5.2.zip
   |  |- Dockerfile
   |- author
   |  |- Dockerfile
