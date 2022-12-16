@@ -7,8 +7,8 @@ Getting started guide for development with [Adobe Experience Manager](https://ww
 This tutorial assumes running on a Mac. Installation on Windows might differ for certain steps. The following items are required:
 
 - [Docker](https://www.docker.com) with at least 4GB memory allocated (Recommended for 8GB)
-- AEM installation file, name it `aem-quickstart.jar`.
-- AEM license file, named `license.properties`
+- AEM installation file, name it `aem-quickstart.jar`. **Name has to match as mentioned**. 
+- AEM license file, named `license.properties`.  **Name has to match as mentioned**. 
 - Recommended: [Homebrew](https://brew.sh) package manager
 
 ## Getting started: running AEM
@@ -34,6 +34,7 @@ Publisher: [http://localhost:4503](http://localhost:4503)
 ~ Images need to be rebuild when changing packages in the `aem_packages` directories.
 ~ After stopping a container, or after a system reboot, you can use `docker-compose up` to start the containers.
 
+to Start use `start-aem-docker.sh` and to reset,delete everything use `reset-aem-docker.sh`
 ## Folder Structure
 ```
 /aem-docker-getting-started
@@ -82,6 +83,7 @@ For windows: Download the bin file form apache maven and follow environment path
 - `docker-compose build` to build the container with docker-compose yaml file.
 - `docker-compose up` to start runiing all the docker containers with docker-compose.
 - `docker start <container id> or docker stop <container id>` to start/stop a container. 
+- `docker stop <container id> or docker stop <container id>` to start/stop a container. 
 - `docker build -t aem-test .` build a docker image out of the Dockerfile at current directory. `"."` symbol is mandtory for docker build command.
 - `docker exec -it <container id> /bin/bash` to access docker container from terminal window. Use `CTRL+D` to exit the terminal.
 
