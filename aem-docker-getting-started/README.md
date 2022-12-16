@@ -16,7 +16,7 @@ This tutorial assumes running on a Mac. Installation on Windows might differ for
 1. Clone this repository to a local directory and put the AEM installation file, license file in the root.
 2. Put AEM quickstart jar file in `./aem_instance/` 
 3. Put AEM packages that need to be installed during build in `./aem_packages/`. Order of installation will be alphabetically, based on package file name.
-4. run `aem-docker-start.sh` 
+4. run `start-aem-docker.sh` 
 or 
 5. 
 - Build the Docker images with `docker build -t aem-base -f base/Dockerfile . && docker-compose build` inside "aem-docker-getting-started" folder. This will take time depending on the number of packages, as the author and publisher are started during build to be able to install packages.
@@ -31,7 +31,7 @@ Dispatcher URL: [http://localhost](http://localhost)
 Publisher: [http://localhost:4503](http://localhost:4503)
 
 ~ Starting and stopping containers preserves AEM content. 
-~ Images need to be rebuild when changing packages in the `packages` directories.
+~ Images need to be rebuild when changing packages in the `aem_packages` directories.
 ~ After stopping a container, or after a system reboot, you can use `docker-compose up` to start the containers.
 
 ## Folder Structure
@@ -40,7 +40,7 @@ Publisher: [http://localhost:4503](http://localhost:4503)
   |- aem_instance
   |  |- aem-quickstart.jar
   |  |- license.properties
-  |- packages
+  |- aem_packages
   |  |- aem-service-pkg-6.5.2.zip
   |- base
   |  |- Dockerfile
