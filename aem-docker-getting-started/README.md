@@ -2,6 +2,10 @@
 
 Getting started guide for development with [Adobe Experience Manager](https://www.adobe.com/nl/marketing-cloud/experience-manager.html) together with Docker. The configuration contains an AEM author, publisher and dispatcher environment, running in three separate containers. Docker images also have support for installing AEM packages during build.
 
+## Note : 
+In case you are using the AEM as cloud please follow below link to setting up the default dispatcher as part of the cloud.
+[Dispatcher Docker](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html)
+
 ## Prerequisites
 
 This tutorial assumes running on a Mac. Installation on Windows might differ for certain steps. The following items are required:
