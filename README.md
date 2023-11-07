@@ -1,4 +1,4 @@
-# AEM & Docker getting started guide
+# AEM Docker getting started guide
 
 Getting started guide for development with [Adobe Experience Manager](https://www.adobe.com/nl/marketing-cloud/experience-manager.html) together with Docker. The configuration contains an AEM author, publisher and dispatcher environment, running in three separate containers. Docker images also have support for installing AEM packages during build.
 
