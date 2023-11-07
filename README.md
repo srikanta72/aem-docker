@@ -1,14 +1,7 @@
 # AEM Docker Setup (AEM Local environment setup with docker)
-#### Setup dispatcher using docker with centOS
-[aem_local_setup/src/master/docker_httpd2_4_centos/](docker_httpd2_4_centos/README.md)
+
 #### Setup author, publisher and dispatcher using docker with centOS 
 [aem_local_setup/src/master/aem-docker-getting-started/](aem-docker-getting-started/README.md)
-
-#### Setup dispatcher using docker with centOS 
-[aem_local_setup/src/master/vagrant_httpd2_4_centos/](vagrant_httpd2_4_centos/README.md)
-
-#### Setup dispatcher using docker with Ubuntu 
-[aem_local_setup/src/master/vagrant_apache2_ubuntu/](vagrant_apache2_ubuntu/README.md)
 
 #### Setup author, publisher and dispatcher using vagrant with centOS
 Look at https://github.com/ahmed-musallam/AEM-UP
