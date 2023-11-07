@@ -1,4 +1,4 @@
-# cms_local_setup (Local environment setup)
+# AEM Docker Setup (AEM Local environment setup with docker)
 #### Setup dispatcher using docker with centOS
 [aem_local_setup/src/master/docker_httpd2_4_centos/](docker_httpd2_4_centos/README.md)
 #### Setup author, publisher and dispatcher using docker with centOS 
