@@ -1,4 +1,0 @@
-Run 
-``
-vagrant up
-``
